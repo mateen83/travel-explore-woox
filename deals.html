@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Menu Toggle</title>
+    <title>Travel Deals - WoOx Travel</title>
+    <meta name="description" content="Discover our exclusive travel deals and packages. Book your dream vacation at unbeatable prices with WoOx Travel.">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/globel.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
@@ -12,38 +12,197 @@
 </head>
 <body>
 
-    <header class="header-area">
-        <div class="row">
-            <div class="logo">
-               <a href="index.html"> <img src="images/logo.png" alt="WoOx"></a>
+    <div class="fixed">
+        <div class="header-area">
+            <div class="row">
+                <div class="logo mbl-logo">
+                    <a href="index.html"><img src="images/logo.png" alt="WoOx"></a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="deals.html" class="deals">Deals</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="book.html">Book Yours</a></li>
+                    </ul>
+                </nav>
+                <i class="fa-solid fa-bars menu-icon"></i>
             </div>
-            <nav class="main-nav">
-                <ul class="nav">
-                    <li><a href="index.html" class="">Home</a></li>
-                    <li><a class="" href="about.html">About</a></li>
-                    <li><a class="deals" href="deals.html">Deals</a></li>
-                    <li><a href="reservation.html">Reservation</a></li>
-                    <li><a href="book.html">Book Yours</a></li>
-                </ul>
-            </nav>
-            <i class="fa-solid fa-bars menu-icon"></i> 
         </div>
-    </header>
+    </div>
 
     <section class="for-mbl">
         <nav class="mobile-nav">
             <ul class="mobile-menu">
-                <li><a href="index.html" class="mobile-active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="deals.html">Deals</a></li>
+                <li><a href="deals.html" class="mobile-active">Deals</a></li>
                 <li><a href="reservation.html">Reservation</a></li>
                 <li><a href="book.html">Book Yours</a></li>
             </ul>
         </nav>
     </section>
 
-    <script src="js/script.js"></script>
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-image: url('images/banner-03.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h4>Exclusive Travel Offers</h4>
+            <h2>Amazing Deals</h2>
+        </div>
+    </section>
 
-   
+    <!-- Deals Section -->
+    <section class="deals-section">
+        <div class="container">
+            <div class="section-2-heading text-center">
+                <h2>Best Travel Packages</h2>
+                <p>Discover our exclusive deals and make your dream vacation a reality at an unbeatable price.</p>
+            </div>
+            
+            <div class="deals-grid">
+                <!-- Deal 1 -->
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="images/country-01.jpg" alt="Bali, Indonesia">
+                        <div class="deal-badge">Popular</div>
+                    </div>
+                    <div class="deal-content">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Experience the tropical paradise of Bali with pristine beaches, vibrant culture, and luxurious resorts.</p>
+                        <div class="deal-info">
+                            <div class="price">$1,299</div>
+                            <div class="duration">7 Days</div>
+                        </div>
+                        <a href="reservation.html" class="butn">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Deal 2 -->
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="images/country-02.jpg" alt="Paris, France">
+                    </div>
+                    <div class="deal-content">
+                        <h3>Paris, France</h3>
+                        <p>Romantic getaway to the City of Light. Explore iconic landmarks, world-class museums, and exquisite cuisine.</p>
+                        <div class="deal-info">
+                            <div class="price">$1,599</div>
+                            <div class="duration">5 Days</div>
+                        </div>
+                        <a href="reservation.html" class="butn">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Deal 3 -->
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="images/country-03.jpg" alt="Kyoto, Japan">
+                        <div class="deal-badge">Special</div>
+                    </div>
+                    <div class="deal-content">
+                        <h3>Kyoto, Japan</h3>
+                        <p>Immerse yourself in traditional Japan. Visit ancient temples, beautiful gardens, and experience authentic culture.</p>
+                        <div class="deal-info">
+                            <div class="price">$2,199</div>
+                            <div class="duration">10 Days</div>
+                        </div>
+                        <a href="reservation.html" class="butn">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Deal 4 -->
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="images/banner-01.jpg" alt="Santorini, Greece">
+                    </div>
+                    <div class="deal-content">
+                        <h3>Santorini, Greece</h3>
+                        <p>Stunning views of the Aegean Sea, white-washed buildings, and breathtaking sunsets await you in Santorini.</p>
+                        <div class="deal-info">
+                            <div class="price">$1,799</div>
+                            <div class="duration">6 Days</div>
+                        </div>
+                        <a href="reservation.html" class="butn">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Deal 5 -->
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="images/banner-02.jpg" alt="Banff, Canada">
+                        <div class="deal-badge">New</div>
+                    </div>
+                    <div class="deal-content">
+                        <h3>Banff, Canada</h3>
+                        <p>Experience the majestic Canadian Rockies with crystal-clear lakes, towering mountains, and abundant wildlife.</p>
+                        <div class="deal-info">
+                            <div class="price">$1,899</div>
+                            <div class="duration">8 Days</div>
+                        </div>
+                        <a href="reservation.html" class="butn">Book Now</a>
+                    </div>
+                </div>
+                
+                <!-- Deal 6 -->
+                <div class="deal-card">
+                    <div class="deal-image">
+                        <img src="images/banner-04.jpg" alt="Machu Picchu, Peru">
+                    </div>
+                    <div class="deal-content">
+                        <h3>Machu Picchu, Peru</h3>
+                        <p>Journey to the ancient Incan citadel high in the Andes Mountains. A once-in-a-lifetime adventure awaits.</p>
+                        <div class="deal-info">
+                            <div class="price">$2,499</div>
+                            <div class="duration">12 Days</div>
+                        </div>
+                        <a href="reservation.html" class="butn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-action section -->
+    <div class="call-to-action"> 
+        <div class="container">
+            <div class="heading-footer">
+                <div class="footer-h2">
+                    <h2>Don't Miss These Deals</h2>
+                    <h4>Book Now Before They're Gone</h4>
+                </div>
+                <div class="col-lg-4">
+                    <div class="border-button">
+                        <a href="reservation.html">Reserve Your Spot</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-text">
+                <div class="col-lg-12">
+                    <p>
+                        Copyright © 2036
+                        <a href="#">WoOx Travel</a>
+                        Company. All rights reserved.
+                        <br>
+                        Design:
+                        <a href="https://templatemo.com" target="_blank" title="Free CSS templates">TemplateMo</a>
+                    </p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

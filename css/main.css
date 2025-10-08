@@ -129,6 +129,8 @@ body {
     align-items: center;
     z-index: 2;  
     flex-direction: column;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-img {
@@ -146,6 +148,8 @@ body {
     text-align: center;
     z-index: 1;
     margin-top: 30px;
+    max-width: 800px;
+    padding: 0 20px;
 }
 
 .hero-content h4 {
@@ -153,6 +157,8 @@ body {
     font-size: 20px;
     color: #fff;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .hero-content h2 {
@@ -160,22 +166,29 @@ body {
     color: #fff;
     font-weight: 700;
     margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .btn-hero {
     background-color: transparent;
     border: 1px solid #58b4c1;
     color: #58b4c1;
-    padding: 10px 30px;
-    font-size: 14px;
+    padding: 12px 35px;
+    font-size: 16px;
     text-decoration: none;
     border-radius: 25px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .btn-hero:hover {
     background-color: #58b4c1;
     color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* More Info Section Styles */
@@ -339,6 +352,24 @@ label {
     width: 50%;
     padding: 20px;
 }
+
+/* Section 2 Heading - Centered */
+.section-2-heading.text-center {
+    text-align: center;
+    margin: 0 auto 60px;
+    max-width: 700px;
+}
+
+.section-2-heading.text-center h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-2-heading.text-center p {
+    text-align: center;
+    margin: 0 auto;
+}
+
 .width{
 
     width: 100%;
@@ -461,20 +492,132 @@ width: 33%;
 #section-3-icon{
     color: #afafaf;
     font-size: 16px;
+
 }
 
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
 
+.feature-card {
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
 
+.feature-card:hover {
+    transform: translateY(-10px);
+}
 
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #58b4c1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
 
+.feature-icon i {
+    font-size: 30px;
+    color: #ffffff;
+}
 
+.feature-card h3 {
+    color: #2a2a2a;
+    margin-bottom: 15px;
+}
 
+/* Booking Section */
+.booking-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
 
+.booking-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
 
+.booking-image {
+    flex: 1;
+}
 
+.booking-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 
+.booking-text {
+    flex: 1;
+}
 
+.booking-text h2 {
+    color: #2a2a2a;
+    margin-bottom: 20px;
+}
 
+.booking-stats {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    color: #58b4c1;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.stat p {
+    color: #2a2a2a;
+    font-weight: 500;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 80px 0;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-content p {
+    font-style: italic;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+}
+
+.testimonial-author h4 {
+    color: #2a2a2a;
+    margin-bottom: 5px;
+}
 
 .button-container {
     display: flex;
@@ -534,6 +677,557 @@ width: 33%;
     right: -30px; /* Move right arrow outside */
 }
 
+/* Deals Section */
+.deals-section {
+    padding: 80px 0;
+}
+
+.deals-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.deal-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: #ffffff;
+}
+
+.deal-card:hover {
+    transform: translateY(-10px);
+}
+
+.deal-image {
+    position: relative;
+}
+
+.deal-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.deal-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #58b4c1;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.deal-content {
+    padding: 20px;
+}
+
+.deal-content h3 {
+    color: #2a2a2a;
+    margin-bottom: 10px;
+}
+
+.deal-content p {
+    color: #afafaf;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.deal-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #58b4c1;
+}
+
+.duration {
+    background-color: #f0f0f0;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #2a2a2a;
+    font-weight: 500;
+}
+
+.deal-content .butn {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+/* Reservation Section */
+.reservation-section {
+    padding: 80px 0;
+}
+
+.reservation-content {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.reservation-form-container {
+    flex: 2;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-info {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.half {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2a2a2a;
+    font-weight: 500;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #58b4c1;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+.info-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.info-card h3 {
+    color: #58b4c1;
+    margin-bottom: 15px;
+}
+
+.info-card h3 i {
+    margin-right: 10px;
+}
+
+.contact-detail {
+    color: #2a2a2a;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.confirmation-message {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.confirmation-icon {
+    font-size: 60px;
+    color: #58b4c1;
+    margin-bottom: 20px;
+}
+
+.confirmation-message h3 {
+    color: #2a2a2a;
+    margin-bottom: 15px;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.mission-vision-content {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    margin-top: 50px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission, .vision {
+    flex: 1;
+    text-align: center;
+    padding: 40px 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.mission:hover, .vision:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: #58b4c1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: transform 0.3s ease;
+}
+
+.icon-box:hover {
+    transform: scale(1.1);
+}
+
+.icon-box i {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.mission h3, .vision h3 {
+    color: #2a2a2a;
+    margin-bottom: 15px;
+}
+
+.mission p, .vision p {
+    color: #afafaf;
+    line-height: 1.6;
+}
+
+/* Team Section */
+.team-section {
+    padding: 80px 20px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-member {
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+    margin-bottom: 30px;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.member-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 20px;
+}
+
+.member-info h4 {
+    color: #2a2a2a;
+    margin-bottom: 5px;
+}
+
+.position {
+    color: #58b4c1 !important;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    margin: 0 5px;
+    color: #58b4c1;
+    text-align: center;
+    line-height: 35px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #58b4c1;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* Stats Section */
+.stats-section {
+    background-color: #58b4c1;
+    padding: 60px 20px;
+    color: #ffffff;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.stat-text {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* About Content */
+.about-content {
+    margin-top: 50px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #58b4c1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature-icon:hover {
+    transform: scale(1.1);
+}
+
+.feature-icon i {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.feature-card h3 {
+    color: #2a2a2a;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #afafaf;
+    line-height: 1.6;
+}
+
+/* Booking Section */
+.booking-section {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.booking-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.booking-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.booking-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.booking-image:hover img {
+    transform: scale(1.05);
+}
+
+.booking-text {
+    flex: 1;
+}
+
+.booking-text h2 {
+    color: #2a2a2a;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.booking-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.booking-stats {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.stat {
+    flex: 1;
+}
+
+.stat h3 {
+    color: #58b4c1;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.stat h3 i {
+    margin-right: 10px;
+}
+
+.stat p {
+    color: #2a2a2a;
+    font-weight: 500;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial-card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-rating {
+    color: #ffc107;
+    margin-bottom: 15px;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.testimonial-author h4 {
+    color: #2a2a2a;
+    margin-bottom: 5px;
+}
+
+.testimonial-author p {
+    color: #58b4c1;
+    font-weight: 500;
+    margin: 0;
+}
 
 /* Call-to-action section background image and overlay */
 .call-to-action {
@@ -581,7 +1275,6 @@ width: 33%;
     background-color: #ffffff;
     color: #58b4c1;
 }
- 
 
 
 .footer-h2 h2{
@@ -596,6 +1289,32 @@ width: 33%;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin: 0 5px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #ffffff;
+    color: #58b4c1;
+    transform: translateY(-3px);
+}
+
 /* Footer styling */
 /* Footer styling */
 footer {
@@ -637,31 +1356,16 @@ footer p {
     align-items: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Text Centering */
+.text-center {
+    text-align: center;
+}
 
 /* Styles for screens with max-width: 960px */
 @media (max-width: 960px) {
+    .hero-section {
+        height: 80vh;
+    }
     .header-area {
         margin-top: 0;
         background-color: #58b4c1;
@@ -696,6 +1400,7 @@ footer p {
         position: absolute;
         z-index: 9999;
         width: 100%;
+        top: 70px;
     }
     .mobile-nav ul li {
         display: block;
@@ -716,11 +1421,16 @@ footer p {
         flex: 1 1 48%;
         max-width: calc(50% - 20px);
     }
+    .hero-content {
+        margin-top: 20px;
+        padding: 0 15px;
+        max-width: 90%;
+    }
     .hero-content h2 {
-        font-size: 50px;
+        font-size: 40px;
     }
     .hero-content h4 {
-        font-size: 20px;
+        font-size: 18px;
     }
     .btn-hero {
         font-size: 16px;
@@ -801,10 +1511,66 @@ footer p {
     .wid-30{
         width: 100%;
         }
+    .deals-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .reservation-content {
+        flex-direction: column;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .booking-content {
+        flex-direction: column;
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .mission-vision-content {
+        flex-direction: column;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .booking-content {
+        flex-direction: column;
+    }
+    
+    .booking-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* Styles for screens with max-width: 768px */
 @media (max-width: 768px) {
+    .hero-section {
+        height: 70vh;
+    }
     .col-lg-3, .col-sm-6, .col-6 {
         flex: 1 1 48%;
         max-width: calc(50% - 20px);
@@ -822,8 +1588,7 @@ footer p {
     }
     .more-info {
         margin: 60px 10px 0px 10px;
-    }
- 
+    } 
 
 
 
@@ -849,11 +1614,23 @@ footer p {
         padding: 0 20px 0px 20px;
         margin-top: -5px;
     }
+    .hero-content {
+        margin-top: 15px;
+        padding: 0 10px;
+        max-width: 95%;
+    }
     .hero-content h2 {
-        font-size: 36px;
+        font-size: 32px;
+        margin-bottom: 20px;
     }
     .hero-content h4 {
-        font-size: 15px;
+        font-size: 14px;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+    }
+    .btn-hero {
+        font-size: 14px;
+        padding: 10px 25px;
     }
     .progressbar {
         width: 30px;
@@ -929,46 +1706,864 @@ footer p {
         height: 374px;
         border-radius: 23px;
     }
+    .deals-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-h2 h2 {
+        font-size: 30px;
+    }
+    
+    .footer-h2 h4 {
+        font-size: 18px;
+    }
+}
+
+/* Mission & Vision responsive */
+@media (max-width: 960px) {
+    .mission-vision-content {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+    
+    .booking-content {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    
+    .booking-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+    
+    .deals-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+    
+    .reservation-content {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+}
+
+/* Form Styles - Ensure labels are left-aligned */
+.reservation-form .form-group {
+    text-align: left;
+}
+
+.reservation-form label {
+    text-align: left;
+    display: block;
+}
+
+.reservation-form input, 
+.reservation-form select, 
+.reservation-form textarea {
+    text-align: left;
+}
+
+.reservation-form .error-message {
+    text-align: left;
 }
 
 
 
+/* ============================================
+   RESPONSIVE STYLES - MOBILE & TABLET
+   ============================================ */
 
+/* ===== LARGE TABLETS & SMALL LAPTOPS (1024px and below) ===== */
+@media (max-width: 1024px) {
+    .row {
+        padding: 8px 40px 0px 40px;
+    }
+    
+    .more-info {
+        margin: 60px 40px 0px 40px;
+        border-radius: 40px;
+    }
+    
+    .info-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .section-2 {
+        margin-top: 80px;
+    }
+    
+    .section-2-heading {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .deals-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .wid-70 {
+        width: 65%;
+    }
+    
+    .wid-30 {
+        width: 35%;
+    }
+    
+    .call-to-action {
+        margin-top: 80px;
+    }
+}
 
+/* ===== TABLETS (768px to 960px) ===== */
+@media (max-width: 960px) {
+    /* Header & Navigation */
+    .header-area {
+        margin-top: 0;
+        background-color: #58b4c1;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 70px;
+        padding: 10px;
+    }
+    
+    .fa-bars, .fa-times {
+        border: none !important;
+        display: block !important;
+        font-size: 25px;
+        cursor: pointer;
+        z-index: 99;
+        padding-top: 20px;
+        color: #fff;
+    }
+    
+    .main-nav .nav {
+        display: none;
+    }
+    
+    .for-mbl {
+        display: none;
+    }
+    
+    .for-mbl.active {
+        display: block !important;
+    }
+    
+    .mobile-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #f0f0f0;
+        position: absolute;
+        z-index: 9999;
+        width: 100%;
+        top: 70px;
+        left: 0;
+    }
+    
+    .mobile-nav ul li {
+        display: block;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .mobile-nav ul li a {
+        display: block;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        color: #333;
+    }
+    
+    .mobile-nav ul li a:hover {
+        background-color: #ebebeb;
+    }
+    
+    .row {
+        padding: 0 20px 0px 20px;
+        margin-top: -5px;
+    }
+    
+    /* Hero Section */
+    .hero-content h2 {
+        font-size: 44px;
+    }
+    
+    .hero-content h4 {
+        font-size: 18px;
+    }
+    
+    .btn-hero {
+        font-size: 15px;
+        padding: 10px 28px;
+    }
+    
+    /* More Info Section */
+    .more-info {
+        margin: 60px 20px 0px 20px;
+        border-radius: 30px;
+    }
+    
+    .info-row {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    
+    .col-lg-3, .col-sm-6, .col-6 {
+        padding: 10px 15px;
+    }
+    
+    .flex-cls {
+        gap: 10px;
+    }
+    
+    .h-4 {
+        font-size: 13px;
+    }
+    
+    .h-4-num {
+        font-size: 15px;
+    }
+    
+    #icon-hero {
+        font-size: 20px;
+        padding: 12px;
+    }
+    
+    /* Progress Banner */
+    .progress-banner {
+        width: 80%;
+        padding: 15px;
+        margin: 15px;
+    }
+    
+    .controls {
+        gap: 40px;
+    }
+    
+    .progressbar {
+        width: 120px;
+    }
+    
+    .text {
+        font-size: 14px;
+    }
+    
+    /* Main Grid & Content */
+    .main-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .wid-70 {
+        width: 100%;
+    }
+    
+    .wid-30 {
+        width: 100%;
+    }
+    
+    .left-div {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        border-bottom: 1px solid #e9e6e6;
+    }
+    
+    .right-div {
+        width: 100%;
+        height: 350px;
+        padding: 20px;
+    }
+    
+    .image-div img {
+        width: 240px;
+        height: 250px;
+    }
+    
+    /* Grids */
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .deals-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    /* Booking & Reservation */
+    .booking-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .booking-stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .reservation-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    /* Mission & Vision */
+    .mission-vision-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    /* Footer */
+    .heading-footer {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .footer-h2 h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .footer-h2 h4 {
+        font-size: 18px;
+        text-align: center;
+    }
+}
 
+/* ===== MOBILE DEVICES (768px and below) ===== */
+@media (max-width: 768px) {
+    /* Base Adjustments */
+    body {
+        font-size: 14px;
+    }
+    
+    /* Header */
+    .row {
+        padding: 0 15px;
+    }
+    
+    .mbl-logo img {
+        padding-top: 3px;
+        height: 28px;
+        margin-top: 5px;
+    }
+    
+    .fa-bars, .fa-times {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+        height: 70vh;
+    }
+    
+    .hero-content {
+        margin-top: 15px;
+        padding: 0 10px;
+        max-width: 95%;
+    }
+    .hero-content h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .hero-content h4 {
+        font-size: 14px;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+    }
+    .btn-hero {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+    
+    /* More Info Section */
+    .more-info {
+        margin: 40px 15px 0px 15px;
+        border-radius: 25px;
+        padding: 12px;
+    }
+    .info-row {
+        gap: 10px;
+        padding: 8px 15px;
+    }
+    .col-lg-3, .col-sm-6, .col-6 {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 8px 0;
+    }
+    .flex-cls {
+        flex-direction: row;
+        justify-content: flex-start;
+        text-align: left;
+        gap: 12px;
+        padding: 8px 0;
+    }
+    #icon-hero {
+        font-size: 18px;
+        padding: 10px;
+    }
+    .h-4 {
+        font-size: 12px;
+    }
+    .h-4-num {
+        font-size: 14px;
+    }
+    .butn {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    /* Progress Banner */
+    .progress-banner {
+        width: 90%;
+        padding: 12px;
+        margin: 12px;
+        position: relative;
+        bottom: auto;
+    }
+    .controls {
+        gap: 25px;
+    }
+    .progressbar {
+        width: 80px;
+    }
+    .text {
+        font-size: 12px;
+    }
+    label {
+        font-size: 12px;
+    }
+    /* Sections */
+    .section-2 {
+        margin-top: 80px;
+    }
+    
+    .section-2-heading {
+        width: 100%;
+        padding: 0 15px;
+        margin-bottom: 50px;
+    }
+    
+    .section-2-heading h2 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+    .section-2-heading p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    /* Main Grid */
+    .wid-70, .wid-30 {
+        width: 100%;
+    }
+    
+    .left-div {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .image-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image-div img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        min-height: 280px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    
+    .content-div {
+        gap: 15px;
+    }
+    
+    .text-button-div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .text-content h2 {
+        font-size: 22px;
+    }
+    
+    .text-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .click-btn {
+        font-size: 13px;
+        padding: 10px 22px;
+        align-self: flex-start;
+    }
+    
+    .icons-text-div {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .icon-text {
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .icon-text p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .right-div {
+        height: 300px;
+        padding: 15px;
+    }
+    
+    /* Button Container */
+    .button-container {
+        margin-top: 20px;
+        gap: 10px;
+    }
+    
+    .section-3-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+        margin: 0 5px;
+    }
+    
+    .arrow {
+        font-size: 14px;
+    }
+    
+    .btn-1 .arrow {
+        left: -25px;
+    }
+    
+    .btn-3 .arrow {
+        right: -25px;
+    }
+    
+    /* Grids - Single Column */
+    .features-grid,
+    .deals-grid,
+    .testimonial-grid,
+    .team-grid,
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+    }
+    
+    .feature-card,
+    .deal-card,
+    .testimonial-card,
+    .team-member {
+        margin-bottom: 20px;
+    }
+    
+    /* Booking Section */
+    .booking-section {
+        padding: 60px 10px;
+    }
+    
+    .booking-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .booking-text h2 {
+        font-size: 28px;
+    }
+    
+    .booking-text p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .booking-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .stat h3 {
+        font-size: 20px;
+    }
+    
+    /* Reservation Section */
+    .reservation-section {
+        padding: 60px 0;
+    }
+    
+    .reservation-content {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    
+    .reservation-form-container {
+        padding: 20px 15px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    input, select, textarea {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+    
+    /* Mission & Vision */
+    .mission-vision {
+        padding: 60px 10px;
+    }
+    
+    .mission-vision-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .mission, .vision {
+        padding: 30px 20px;
+    }
+    
+    /* Team Section */
+    .team-section {
+        padding: 60px 10px;
+    }
+    
+    /* Testimonials */
+    .testimonials {
+        padding: 60px 10px;
+    }
+    
+    /* Call to Action */
+    .call-to-action {
+        padding: 40px 0;
+        margin-top: 80px;
+    }
+    
+    .heading-footer {
+        padding: 0 15px;
+        gap: 25px;
+    }
+    
+    .footer-h2 h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .footer-h2 h4 {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .border-button a {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 30px 0;
+        font-size: 14px;
+    }
+    
+    footer p {
+        padding: 0 15px;
+        line-height: 22px;
+    }
+}
 
+/* ===== SMALL MOBILE DEVICES (480px and below) ===== */
+@media (max-width: 480px) {
+    .hero-section {
+        height: 60vh;
+    }
+    
+    .hero-content {
+        margin-top: 10px;
+        padding: 0 5px;
+        max-width: 100%;
+    }
+    
+    .hero-content h2 {
+        font-size: 26px;
+    }
+    
+    .hero-content h4 {
+        font-size: 12px;
+    }
+    
+    .btn-hero {
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+    
+    .more-info {
+        margin: 30px 10px 0px 10px;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    .info-row {
+        gap: 8px;
+        padding: 6px 10px;
+    }
+    .col-lg-3, .col-sm-6, .col-6 {
+        padding: 6px 0;
+    }
+    .flex-cls {
+        gap: 10px;
+        padding: 6px 0;
+    }
+    #icon-hero {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .h-4 {
+        font-size: 11px;
+    }
+    .h-4-num {
+        font-size: 13px;
+    }
+    .butn {
+        font-size: 11px;
+        padding: 8px 18px;
+    }
+    .section-2-heading h2 {
+        font-size: 22px;
+    }
+    
+    .text-content h2 {
+        font-size: 20px;
+    }
+    
+    .footer-h2 h2 {
+        font-size: 24px;
+    }
+    
+    .footer-h2 h4 {
+        font-size: 14px;
+    }
+}
 
+/* Form Styles - Ensure labels are left-aligned */
+.reservation-form .form-group {
+    text-align: left;
+}
 
+.reservation-form label {
+    text-align: left;
+    display: block;
+}
 
+.reservation-form input, 
+.reservation-form select, 
+.reservation-form textarea {
+    text-align: left;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/
+.reservation-form .error-message {
+    text-align: left;
+}

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Menu Toggle</title>
+    <title>Make a Reservation - WoOx Travel</title>
+    <meta name="description" content="Book your next adventure with WoOx Travel. Fill out our easy reservation form and our travel experts will contact you shortly.">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/globel.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
@@ -11,38 +12,268 @@
 </head>
 <body>
 
-    <header class="header-area">
-        <div class="row">
-            <div class="logo">
-               <a href="index.html"> <img src="images/logo.png" alt="WoOx"></a>
+    <div class="fixed">
+        <div class="header-area">
+            <div class="row">
+                <div class="logo mbl-logo">
+                    <a href="index.html"><img src="images/logo.png" alt="WoOx"></a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="reservation.html" class="reservation">Reservation</a></li>
+                        <li><a href="book.html">Book Yours</a></li>
+                    </ul>
+                </nav>
+                <i class="fa-solid fa-bars menu-icon"></i>
             </div>
-            <nav class="main-nav">
-                <ul class="nav">
-                    <li><a href="index.html" class="">Home</a></li>
-                    <li><a class="" href="about.html">About</a></li>
-                    <li><a href="deals.html">Deals</a></li>
-                    <li><a class="reservation" href="reservation.html">Reservation</a></li>
-                    <li><a href="book.html">Book Yours</a></li>
-                </ul>
-            </nav>
-            <i class="fa-solid fa-bars menu-icon"></i> 
         </div>
-    </header>
+    </div>
 
     <section class="for-mbl">
         <nav class="mobile-nav">
             <ul class="mobile-menu">
-                <li><a href="index.html" class="mobile-active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="deals.html">Deals</a></li>
-                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="reservation.html" class="mobile-active">Reservation</a></li>
                 <li><a href="book.html">Book Yours</a></li>
             </ul>
         </nav>
     </section>
 
-    <script src="js/script.js"></script>
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-image: url('images/banner-04.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h4>Plan Your Journey</h4>
+            <h2>Make a Reservation</h2>
+        </div>
+    </section>
 
-   
+    <!-- Reservation Section -->
+    <section class="reservation-section">
+        <div class="container">
+            <div class="section-2-heading text-center">
+                <h2>Book Your Trip</h2>
+                <p>Fill out the form below to reserve your next adventure. Our team will contact you shortly to confirm your booking.</p>
+            </div>
+            
+            <div class="reservation-content">
+                <div class="reservation-form-container">
+                    <form id="reservationForm" class="reservation-form">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="destination">Destination *</label>
+                            <select id="destination" name="destination" required>
+                                <option value="">Select a destination</option>
+                                <option value="bali">Bali, Indonesia</option>
+                                <option value="paris">Paris, France</option>
+                                <option value="kyoto">Kyoto, Japan</option>
+                                <option value="santorini">Santorini, Greece</option>
+                                <option value="banff">Banff, Canada</option>
+                                <option value="machu-picchu">Machu Picchu, Peru</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="destinationError"></span>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="travelers">Number of Travelers *</label>
+                                <input type="number" id="travelers" name="travelers" min="1" max="20" required>
+                                <span class="error-message" id="travelersError"></span>
+                            </div>
+                            
+                            <div class="form-group half">
+                                <label for="departure">Departure Date *</label>
+                                <input type="date" id="departure" name="departure" required>
+                                <span class="error-message" id="departureError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="return">Return Date *</label>
+                            <input type="date" id="return" name="return" required>
+                            <span class="error-message" id="returnError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Special Requests</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="butn">Submit Reservation</button>
+                    </form>
+                    
+                    <!-- Confirmation Message -->
+                    <div id="confirmationMessage" class="confirmation-message" style="display: none;">
+                        <div class="confirmation-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Reservation Submitted!</h3>
+                        <p>Thank you for your reservation. Our travel specialist will contact you within 24 hours to confirm your booking details.</p>
+                        <p>We look forward to helping you create unforgettable memories!</p>
+                    </div>
+                </div>
+                
+                <div class="reservation-info">
+                    <div class="info-card">
+                        <h3><i class="fas fa-phone"></i> Contact Us</h3>
+                        <p>Have questions? Call our travel experts:</p>
+                        <p class="contact-detail">+1 (555) 123-4567</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-envelope"></i> Email Us</h3>
+                        <p>Send us an email for immediate assistance:</p>
+                        <p class="contact-detail">info@wooxtravel.com</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Visit Us</h3>
+                        <p>Come see us at our office:</p>
+                        <p class="contact-detail">123 Travel Street, Suite 100<br>New York, NY 10001</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-action section -->
+    <div class="call-to-action"> 
+        <div class="container">
+            <div class="heading-footer">
+                <div class="footer-h2">
+                    <h2>Need More Information?</h2>
+                    <h4>View Our Travel Packages</h4>
+                </div>
+                <div class="col-lg-4">
+                    <div class="border-button">
+                        <a href="deals.html">View Deals</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-text">
+                <div class="col-lg-12">
+                    <p>
+                        Copyright © 2036
+                        <a href="#">WoOx Travel</a>
+                        Company. All rights reserved.
+                        <br>
+                        Design:
+                        <a href="https://templatemo.com" target="_blank" title="Free CSS templates">TemplateMo</a>
+                    </p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Form validation and submission
+        document.getElementById('reservationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Reset previous errors
+            document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+            
+            // Get form values
+            const fullName = document.getElementById('fullName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const destination = document.getElementById('destination').value;
+            const travelers = document.getElementById('travelers').value;
+            const departure = document.getElementById('departure').value;
+            const returnDate = document.getElementById('return').value;
+            
+            // Validation flags
+            let isValid = true;
+            
+            // Validate full name
+            if (fullName === '') {
+                document.getElementById('nameError').textContent = 'Please enter your full name';
+                isValid = false;
+            }
+            
+            // Validate email
+            if (email === '') {
+                document.getElementById('emailError').textContent = 'Please enter your email address';
+                isValid = false;
+            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid email address';
+                isValid = false;
+            }
+            
+            // Validate destination
+            if (destination === '') {
+                document.getElementById('destinationError').textContent = 'Please select a destination';
+                isValid = false;
+            }
+            
+            // Validate travelers
+            if (travelers === '' || travelers < 1) {
+                document.getElementById('travelersError').textContent = 'Please enter the number of travelers';
+                isValid = false;
+            }
+            
+            // Validate dates
+            if (departure === '') {
+                document.getElementById('departureError').textContent = 'Please select a departure date';
+                isValid = false;
+            }
+            
+            if (returnDate === '') {
+                document.getElementById('returnError').textContent = 'Please select a return date';
+                isValid = false;
+            }
+            
+            // Check if return date is after departure date
+            if (departure && returnDate && new Date(returnDate) <= new Date(departure)) {
+                document.getElementById('returnError').textContent = 'Return date must be after departure date';
+                isValid = false;
+            }
+            
+            // If form is valid, show confirmation
+            if (isValid) {
+                document.getElementById('reservationForm').style.display = 'none';
+                document.getElementById('confirmationMessage').style.display = 'block';
+                
+                // Scroll to confirmation message
+                document.getElementById('confirmationMessage').scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+        
+        // Set min date for departure to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('departure').min = today;
+        
+        // Update return date min when departure date changes
+        document.getElementById('departure').addEventListener('change', function() {
+            document.getElementById('return').min = this.value;
+        });
+    </script>
 </body>
 </html>

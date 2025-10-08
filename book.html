@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Menu Toggle</title>
+    <title>Book Your Trip - WoOx Travel</title>
+    <meta name="description" content="Ready to explore the world? Book your journey with WoOx Travel and experience the best travel packages with personalized service.">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/globel.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
@@ -11,38 +12,230 @@
 </head>
 <body>
 
-    <header class="header-area">
-        <div class="row">
-            <div class="logo">
-               <a href="index.html"> <img src="images/logo.png" alt="WoOx"></a>
+    <div class="fixed">
+        <div class="header-area">
+            <div class="row">
+                <div class="logo mbl-logo">
+                    <a href="index.html"><img src="images/logo.png" alt="WoOx"></a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="book.html" class="book">Book Yours</a></li>
+                    </ul>
+                </nav>
+                <i class="fa-solid fa-bars menu-icon"></i>
             </div>
-            <nav class="main-nav">
-                <ul class="nav">
-                    <li><a href="index.html" class="">Home</a></li>
-                    <li><a class="" href="about.html">About</a></li>
-                    <li><a href="deals.html">Deals</a></li>
-                    <li><a href="reservation.html">Reservation</a></li>
-                    <li><a class="book" href="book.html">Book Yours</a></li>
-                </ul>
-            </nav>
-            <i class="fa-solid fa-bars menu-icon"></i> 
         </div>
-    </header>
+    </div>
 
     <section class="for-mbl">
         <nav class="mobile-nav">
             <ul class="mobile-menu">
-                <li><a href="index.html" class="mobile-active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="deals.html">Deals</a></li>
                 <li><a href="reservation.html">Reservation</a></li>
-                <li><a href="book.html">Book Yours</a></li>
+                <li><a href="book.html" class="mobile-active">Book Yours</a></li>
             </ul>
         </nav>
     </section>
 
-    <script src="js/script.js"></script>
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-image: url('images/banner-01.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h4>Your Adventure Awaits</h4>
+            <h2>Book Your Journey</h2>
+            <a href="#booking-section" class="btn-hero">Reserve Now</a>
+        </div>
+    </section>
 
-   
+    <!-- Why Book With Us -->
+    <section class="section-2">
+        <div class="container">
+            <div class="width container">
+                <div class="section-2-heading text-center">
+                    <h2>Why Choose WoOx Travel</h2>
+                    <p>We provide exceptional travel experiences with personalized service and attention to detail.</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Best Price Guarantee</h3>
+                        <p>We guarantee the best prices on all our travel packages. Found a lower price? We'll match it.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>24/7 Support</h3>
+                        <p>Our travel experts are available around the clock to assist you with any questions or concerns.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <h3>Expert Travel Agents</h3>
+                        <p>Certified travel professionals with extensive knowledge to create your perfect itinerary.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Secure Booking</h3>
+                        <p>Your personal and payment information is protected with industry-leading security measures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking-section" class="booking-section">
+        <div class="container">
+            <div class="booking-content">
+                <div class="booking-image">
+                    <img src="images/country-02.jpg" alt="Travel Destination">
+                </div>
+                
+                <div class="booking-text">
+                    <h2>Ready to Explore the World?</h2>
+                    <p>Embark on a journey of a lifetime with WoOx Travel. Our expertly crafted itineraries ensure you experience the best of every destination.</p>
+                    <p>From the moment you book until you return home, we're with you every step of the way to ensure your trip is seamless and unforgettable.</p>
+                    
+                    <div class="booking-stats">
+                        <div class="stat">
+                            <h3><i class="fas fa-users"></i> 10,000+</h3>
+                            <p>Happy Travelers</p>
+                        </div>
+                        <div class="stat">
+                            <h3><i class="fas fa-map-marker-alt"></i> 50+</h3>
+                            <p>Destinations</p>
+                        </div>
+                        <div class="stat">
+                            <h3><i class="fas fa-calendar-alt"></i> 15+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    
+                    <a href="reservation.html" class="butn">Reserve Your Adventure</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-2-heading text-center">
+                <h2>What Our Travelers Say</h2>
+                <p>Don't just take our word for it - hear from our satisfied customers.</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"WoOx Travel made our honeymoon to Bali absolutely perfect. Every detail was taken care of, and we could just focus on enjoying our time together."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Sarah & Michael Johnson</h4>
+                        <p>Bali Honeymoon Package</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"The Japan tour was incredible! Our guide was knowledgeable and the itinerary was well-paced. I'm already planning my next trip with WoOx."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Robert Chen</h4>
+                        <p>Japan Cultural Tour</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"As a solo traveler, I was worried about safety and logistics. WoOx exceeded my expectations with their attention to detail and 24/7 support."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <h4>Emma Thompson</h4>
+                        <p>South America Adventure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <div class="call-to-action"> 
+        <div class="container">
+            <div class="heading-footer">
+                <div class="footer-h2">
+                    <h2>Your Dream Vacation is One Click Away</h2>
+                    <h4>Book Now and Start Your Adventure</h4>
+                </div>
+                <div class="col-lg-4">
+                    <div class="border-button">
+                        <a href="reservation.html">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-text">
+                <div class="col-lg-12">
+                    <p>
+                        Copyright © 2036
+                        <a href="#">WoOx Travel</a>
+                        Company. All rights reserved.
+                        <br>
+                        Design:
+                        <a href="https://templatemo.com" target="_blank" title="Free CSS templates">TemplateMo</a>
+                    </p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
