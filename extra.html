@@ -1,3 +1,744 @@
+
+/* Mobile Navigation Styles */
+@media (max-width: 960px) {
+  
+    .header-area {
+        margin-top: 0;
+        background-color: #58b4c1;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 70px;
+        padding: 10px;
+    }
+    /* .info-row {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+    .fa-bars, .fa-times {
+        border: none !important;
+        display: block !important;
+        font-size: 25px;
+        cursor: pointer;
+        z-index: 99;
+        padding-top: 20px;
+        color: #fff;
+    }
+    
+    .main-nav .nav {
+        display: none;
+    }
+    
+    .for-mbl {
+        display: none;
+    }
+    
+    .for-mbl.active {
+        display: block !important;
+    }
+    
+    .mobile-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #f0f0f0;
+        position: absolute;
+        z-index: 9999;
+        width: 100%;
+    }
+    
+    
+    
+    
+    .mobile-nav ul li {
+        display: block;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .mobile-nav ul li a {
+        display: block;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        color: #333;
+    }
+    
+    .mobile-nav ul li a:hover {
+        background-color: #ebebeb;
+    }
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    .col-lg-3, .col-sm-6, .col-6 {
+        flex: 1 1 48%;
+        max-width: calc(50% - 20px);
+    }
+
+    .hero-content h2 {
+        font-size: 50px;
+    }
+
+    .hero-content h4 {
+        font-size: 20px;
+    }
+
+    .btn-hero {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+
+   
+    .info-row {
+        display: flex;
+
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 40px;
+    }
+    .more-info {
+        margin: 80px 10px 0px 10px;
+    }
+
+    .h-4 {
+        font-size: 12px;
+    }
+
+    .h-4-num {
+        font-size: 14px;
+    }
+
+   
+    .row {
+        padding: 0 20px 0px 20px;
+        margin-top: -5px;
+    }
+
+    
+    .col-lg-3, .col-sm-6, .col-6 {
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        text-align: center;
+    }
+
+
+
+    .progressbar {
+      
+        width: 90px;
+     
+    }
+
+    
+    .controls {
+       
+        gap: 30px;
+    }
+
+    .main-grid{
+        display: flex;
+     flex-wrap: wrap;
+     gap: 2px;
+    }
+
+
+    .right-div {
+        width: 30%;
+        height: 400px; /* Adjust height as per your need */
+    }
+    
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        
+    }
+    /* .section-3-main{
+        display: grid;
+    
+    grid-template-columns: 1fr;
+    } */
+
+
+    .left-div {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        gap: 20px; /* Space between image and text */
+        border-bottom: 1px solid #e9e6e6;
+    }
+.right-div{
+    width: 100%;
+}
+
+.section-2-heading{
+    width: 100%;
+}
+
+.heading-footer{
+    flex-direction: column;
+    gap: 40px;
+}
+.footer-h2 h4 {
+    display: flex;
+    justify-content: center;
+
+}
+
+@media (max-width: 768px) {
+    .col-lg-3, .col-sm-6, .col-6 {
+        flex: 1 1 48%;
+        max-width: calc(50% - 20px);
+    }
+    /* .info-row {
+        grid-template-columns: 1fr;
+    } */
+    .info-row {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+
+    .h-4 {
+        font-size: 12px;
+    }
+
+    .h-4-num {
+        font-size: 14px;
+    }
+
+    .more-info {
+        margin: 60px 10px 0px 10px;
+    }
+
+
+    .butn {
+     
+      font-size: 12px;
+        padding: 10px 15px;
+     
+      
+    }
+
+
+    .col-lg-3, .col-sm-6, .col-6 {
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        text-align: center;
+    }
+
+
+
+    .row {
+        padding: 0 20px 0px 20px;
+        margin-top: -5px;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-content h4 {
+        font-size: 18px;
+    }
+    .progressbar {
+      
+        width: 30px;
+     
+    }
+
+    .controls {
+       
+        gap: 20px;
+    }
+
+
+    .footer-h2 h4 {
+        display: flex;
+        justify-content: center;
+    
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for screens max-width 768px */
+@media (max-width: 768px) {
+    .left-div {
+        flex-direction: column;  /* Stack items vertically */
+    }
+
+    .image-div {
+        width: 100%;             /* Full width for the image div */
+    }
+
+    .content-div {
+        width: 100%;             /* Full width for the content div */
+    }
+
+   
+    .icons-text-div {
+        display: flex;
+        flex-direction: column;   /* Stack icons and text vertically */
+    }
+
+    .image-div img {
+        width: 100%;
+        height: 500px;
+        border-radius: 23px;
+       
+    }
+}
+
+img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 2px; /* Optional: add border radius to the image */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query for screens max-width 768px */
+@media (max-width: 768px) {
+
+    .mbl-logo img{
+        padding-top: 3px;
+        width: 100%;
+        margin-top: 5px;
+    }
+    .fa-bars, .fa-times {
+        border: none !important;
+        display: block !important;
+        font-size: 25px;
+        cursor: pointer;
+        z-index: 99;
+        padding-top: 10px;
+        color: #fff;
+    }
+
+    .left-div {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+    }
+
+    .image-div {
+        width: 100%; /* Full width for the image div */
+        display: flex; /* Flexbox for centering */
+        justify-content: center; /* Center image horizontally */
+        align-items: center; /* Center image vertically */
+    }
+
+    .content-div {
+        width: 100%; /* Full width for the content div */
+    }
+
+
+    .icons-text-div {
+        display: flex;
+        flex-direction: row; /* Stack icons and text vertically */
+    }
+}
+/*  */
+
+
+
+
+
+
+
+
+
+/* Call-to-action section background image and overlay */
+.call-to-action {
+    background-image: url('images/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    position: relative;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 120px;
+}
+
+.call-to-action::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5cbbcc; /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.call-to-action .container {
+    position: relative;
+    z-index: 2;
+}
+
+.border-button a {
+  
+        display: inline-block;
+        padding: 12px 30px;
+        color: #ffffff;
+        background-color: transparent;
+        text-decoration: none;
+        border-radius: 25px;
+        border: 2px solid #ffffff;
+        transition: all 0.3s ease;
+    
+}
+
+.border-button a:hover {
+    background-color: #ffffff;
+    color: #58b4c1;
+}
+.footer-h2 h2{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.footer-h2 h4{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+/* Footer styling */
+/* Footer styling */
+footer {
+    background-color: #58b4c1;
+    padding: 40px 0;
+    color: #ffffff;
+    text-align: center; /* Center all text */
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+}
+
+footer a {
+    color: #ffffff; /* Make footer link text white */
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0;
+    text-align: center; /* Ensure text is centered */
+    color: #ffff;
+}
+
+/* Flex container for heading-footer */
+.heading-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+.footer-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .col-lg-8, .col-lg-4 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .call-to-action {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .heading-footer {
+        flex-direction: column; /* Stack items vertically on mobile */
+    }
+}
+.image-div img {
+    width: 100%;
+    height: 374px;
+    border-radius: 23px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section-3" >
+    <div class="container">
+    
+    
+    
+    <div class="section-3-main   container">
+    
+    
+    
+    
+    <div class="width-70">
+    
+    <div  class="flex-img-cont">
+        <div class="width-30">
+    <div class="for-image">
+    <img src="images/country-01.jpg" alt="">
+    </div>
+    </div>
+    
+    <div class="">
+    <div class="flex-content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolore reprehenderit temporibus fugiat dolorem eum corrupti eaque culpa, recusandae officiis aperiam suscipit dolorum dolores eius nemo ipsum quod totam tempora.
+    
+    
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    
+    
+    <div class="width-30">
+    
+    <div class="for-map">
+    
+     <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.186129912953!2d-122.4194156846819!3d37.774929279759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808a00e1f43b%3A0x8d60c516f9cbb08f!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1607119753202!5m2!1sen!2sus"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+    
+    
+    
+    </div>
+    
+    
+    </div>
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-3{
+    width: 100%;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    overflow: hidden;
+}
+
+.for-image img{
+    width: 269px;
+    height: 275px;
+    border-radius: 23px;
+}
+
+.section-3-main{
+    display: grid;
+gap: 10px;
+grid-template-columns: 3fr 1fr;
+}
+.width-70{
+    width: 70%;
+}
+
+.for-map {
+    /* width: 30%; */
+    height: 400px; /* Adjust height as per your need */
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    
+}
+.flex-img-cont{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Hero Section Styles */
 .hero-section {
     box-sizing: border-box;

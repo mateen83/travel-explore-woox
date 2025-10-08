@@ -14,7 +14,7 @@
     <div class="fixed">
         <div class="header-area">
             <div class="row">
-                <div class="logo">
+                <div class="logo mbl-logo">
                     <a href="index.html"><img src="images/logo.png" alt="WoOx"></a>
                 </div>
                 <nav class="main-nav">
@@ -26,11 +26,11 @@
                         <li><a href="book.html">Book Yours</a></li>
                     </ul>
                 </nav>
-                <i class="fa-solid fa-bars menu-icon"></i>
+                <i class="fa-solid fa-bars menu-icon" ></i>
             </div>
         </div>
     </div>
-    <section class="for-mbl">
+    <!-- <section class="for-mbl">
         <nav class="mobile-nav">
             <ul class="mobile-menu">
                 <li><a href="index.html" class="mobile-active">Home</a></li>
@@ -40,7 +40,45 @@
                 <li><a href="book.html">Book Yours</a></li>
             </ul>
         </nav>
-    </section>
+    </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Existing Mobile Menu -->
+<section class="for-mbl">
+    <nav class="mobile-nav">
+        <ul class="mobile-menu">
+            <li><a href="index.html" class="mobile-active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="book.html">Book Yours</a></li>
+        </ul>
+    </nav>
+</section>
+
+<!-- New Mobile Menu for Sticky Header -->
+<!-- <section class="for-mbl new-menu" style="display: none;">
+    <nav class="new-mobile-nav">
+        <ul class="new-mobile-menu">
+            <li><a href="new-home.html" class="mobile-active">New Home</a></li>
+            <li><a href="new-about.html">New About</a></li>
+            <li><a href="new-deals.html">New Deals</a></li>
+            <li><a href="new-reservation.html">New Reservation</a></li>
+            <li><a href="new-book.html">New Book Yours</a></li>
+        </ul>
+    </nav>
+</section> -->
+
    
     <!-- Hero Section -->
     <section class="hero-section">
@@ -58,10 +96,27 @@
 
 
 
-        <div class="more-info">
+        <div class="more-info ">
             <div class="info-row">
                 <div class="col-lg-3 col-sm-6 col-6 flex-cls">
-                    <i class="fa fa-user"></i>
+                    <i class="fa fa-user" id="icon-hero"></i>
+                    <h4>
+                        <span class="h-4">Population:</span>
+                        <br>
+                        <span class="h-4-num">"69.86 M"</span>
+                    </h4>
+                </div>
+                <!-- <div class="col-lg-3 col-sm-6 col-6 flex-cls">
+                    <i class="fa fa-globe" id="icon-hero"></i>
+                    <h4>
+                        <span class="h-4">Area:</span>
+                        <br>
+                        <span class="h-4-num">"123,456 km²"</span>
+                    </h4>
+                </div> -->
+
+                <div class="col-lg-3 col-sm-6 col-6 flex-cls">
+                    <i class="fa fa-globe" id="icon-hero"></i>
                     <h4>
                         <span class="h-4">Population:</span>
                         <br>
@@ -69,15 +124,7 @@
                     </h4>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-6 flex-cls">
-                    <i class="fa fa-globe"></i>
-                    <h4>
-                        <span class="h-4">Area:</span>
-                        <br>
-                        <span class="h-4-num">"123,456 km²"</span>
-                    </h4>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-6 flex-cls">
-                    <i class="fa-solid fa-house"></i>
+                    <i class="fa-solid fa-house"  id="icon-hero"></i>
                     <h4>
                         <span class="h-4">Countries:</span>
                         <br>
@@ -88,7 +135,7 @@
                 <!-- Button now inside a similar div like the others -->
                 <div class="col-lg-3 col-sm-6 col-6 flex-cls">
                    <!-- Optional icon for consistency -->
-                    <a href="" class="butn">Explore More</a>
+                    <a href="" class="butn explr-btn">Explore More</a>
                 </div>
             </div>
         </div>
@@ -136,11 +183,235 @@
 
     </section>
 
+
+<section class="section-2">
+<div class="container">
+    <div class="width container">
+<div class="section-2-heading">
+
+<h2>Visit One Of Our Countries Now</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+
+
+</div>
+</div>
+</div>
+</section>
+
+
+
+<section class=" main-grid container">
+    <!-- Left div (70%) -->
+
+
+    <div class="wid-70">
+    <div class="left-div">
+        <!-- 1st Sub-div (Image) -->
+        <div class="image-div">
+            <img src="images/country-01.jpg" alt="Image">
+        </div>
+
+        <!-- 2nd Sub-div (Text and Button) -->
+        <div class="content-div">
+            <div class="text-button-div">
+                <div class="text-content">
+                    <h2>Heading Text</h2>
+                    <p>This is the description paragraph.</p>
+                </div>
+                <button class="butn click-btn">Explore</button>
+            </div>
+
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, soluta magni aspernatur mollitia reiciendis, .</p>
+            </div>
+
+            <!-- 3rd Sub-div (Icons and Text) -->
+            <div class="icons-text-div">
+                <div class="icon-text">
+                    <i class="fa-solid fa-globe icon" id="section-3-icon"></i>
+                    <p>First Feature</p>
+                </div>
+                <div class="icon-text">
+                    <i class=" icon fa-solid fa-house" id="section-3-icon"></i>
+
+                    <p>Second </p>
+                </div>
+                <div class="icon-text">
+                    <i class="fa fa-user icon" id="section-3-icon"></i>
+                    <p>Third Feature</p>
+                </div>
+            </div>
+
+            <!-- 4th Sub-div (Anchor with Arrow) -->
+            <div class="anchor-div">
+                <a href="#" class="more-link">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <div class="left-div">
+        <!-- 1st Sub-div (Image) -->
+        <div class="image-div">
+            <img src="images/country-01.jpg" alt="Image">
+        </div>
+
+        <!-- 2nd Sub-div (Text and Button) -->
+        <div class="content-div">
+            <div class="text-button-div">
+                <div class="text-content">
+                    <h2>Heading Text</h2>
+                    <p>This is the description paragraph.</p>
+                </div>
+                <button class="butn click-btn">Explore</button>
+            </div>
+
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, soluta magni aspernatur mollitia reiciendis, .</p>
+            </div>
+
+            <!-- 3rd Sub-div (Icons and Text) -->
+            <div class="icons-text-div">
+                <div class="icon-text">
+                    <i class="fa-solid fa-globe icon" id="section-3-icon"></i>
+                    <p>First feature</p>
+                </div>
+                <div class="icon-text">
+                    <i class=" icon fa-solid fa-house" id="section-3-icon"></i>
+
+                    <p>Second</p>
+                </div>
+                <div class="icon-text">
+                    <i class="fa fa-user icon" id="section-3-icon"></i>
+                    <p>Third feature</p>
+                </div>
+            </div>
+
+            <!-- 4th Sub-div (Anchor with Arrow) -->
+            <div class="anchor-div">
+                <a href="#" class="more-link">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="left-div">
+        <!-- 1st Sub-div (Image) -->
+        <div class="image-div">
+            <img src="images/country-01.jpg" alt="Image">
+        </div>
+
+        <!-- 2nd Sub-div (Text and Button) -->
+        <div class="content-div">
+            <div class="text-button-div">
+                <div class="text-content">
+                    <h2>Heading Text</h2>
+                    <p>This is the description paragraph.</p>
+                </div>
+                <button class="butn click-btn">Explore</button>
+            </div>
+
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, soluta magni aspernatur mollitia reiciendis, .</p>
+            </div>
+
+            <!-- 3rd Sub-div (Icons and Text) -->
+            <div class="icons-text-div">
+                <div class="icon-text">
+                    <i class="fa-solid fa-globe icon" id="section-3-icon"></i>
+                    <p>First feature</p>
+                </div>
+                <div class="icon-text">
+                    <i class=" icon fa-solid fa-house" id="section-3-icon"></i>
+
+                    <p>Second</p>
+                </div>
+                <div class="icon-text">
+                    <i class="fa fa-user icon" id="section-3-icon"></i>
+                    <p>Third feature</p>
+                </div>
+            </div>
+
+            <!-- 4th Sub-div (Anchor with Arrow) -->
+            <div class="anchor-div">
+                <a href="#" class="more-link">Learn More</a>
+            </div>
+
+            <div class="button-container">
+                <div class="section-3-btn btn-1">
+                    <i class="arrow fas fa-arrow-left"></i>
+                    1
+                </div>
+                <div class="section-3-btn btn-2">2</div>
+                <div class="section-3-btn btn-3">
+                    3
+                    <i class="arrow fas fa-arrow-right"></i>
+                </div>
+            </div>
+
+
+        </div>
+
+
+       
+
+    </div>
+
+</div>
+ <div class="wid-30">
+    <!-- Right div (30%) with Map -->
+    <div class="right-div">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.492518733827!2d-122.41941548507122!3d37.77492967975932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f09fdd1f%3A0x1a408c0bfbfdc9e1!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1631560288480!5m2!1sen!2sus"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+<div class="call-to-action"> 
+    <div class="container">
+        <div class="heading-footer"> <!-- Renamed from .row to .heading-footer -->
+            <div class="footer-h2">
+                <h2>Are You Looking To Travel?</h2>
+                <h4>Make A Reservation By Clicking The Button</h4>
+            </div>
+            <div class="col-lg-4">
+                <div class="border-button">
+                    <a href="reservation.html">Book Yours Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <div class="container">
+        <div class="footer-text"> <!-- Renamed row to heading-footer -->
+            <div class="col-lg-12">
+                <p>
+                  
+Copyright © 2036
+<a href="#">Wo0x Travel</a>
+Company. All rights reserved.
+<br>
+Design:
+<a href="https://templatemo.com" target="_blank" title="Free CSS templates">TemplateMo</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
     <script src="js/script.js"></script>
-<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet maxime praesentium aliquid reiciendis? Dignissimos inventore a eius error! Quas, commodi doloremque necessitatibus laudantium fugiat debitis. Natus veniam recusandae rerum officiis?</div>
 
-
-
-<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laborum, dolores voluptas similique officia illo voluptatem eos consectetur sint maxime, deserunt reprehenderit quia amet non distinctio doloribus quibusdam? Quibusdam, odit?</div>
 </body>
 </html>
