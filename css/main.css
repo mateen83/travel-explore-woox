@@ -1364,7 +1364,7 @@ footer p {
 /* Styles for screens with max-width: 960px */
 @media (max-width: 960px) {
     .hero-section {
-        height: 80vh;
+        height: 100vh;
     }
     .header-area {
         margin-top: 0;
@@ -1569,7 +1569,7 @@ footer p {
 /* Styles for screens with max-width: 768px */
 @media (max-width: 768px) {
     .hero-section {
-        height: 70vh;
+        height: 100vh;
     }
     .col-lg-3, .col-sm-6, .col-6 {
         flex: 1 1 48%;
@@ -2143,7 +2143,7 @@ footer p {
     
     /* Hero Section */
     .hero-section {
-        height: 70vh;
+        height: 100vh;
     }
     
     .hero-content {
@@ -2479,7 +2479,8 @@ footer p {
 /* ===== SMALL MOBILE DEVICES (480px and below) ===== */
 @media (max-width: 480px) {
     .hero-section {
-        height: 60vh;
+        height: 100vh;
+        padding: 10px;
     }
     
     .hero-content {
@@ -2505,6 +2506,7 @@ footer p {
         margin: 30px 10px 0px 10px;
         border-radius: 20px;
         padding: 10px;
+        width:70%
     }
     .info-row {
         gap: 8px;
